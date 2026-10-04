@@ -1,0 +1,160 @@
+{
+  "name": "Lifan Gu",
+  "nameZh": "谷立帆",
+  "siteUrl": "https://gulifan.github.io",
+  "title": "Research Assistant",
+  "affiliation": "Westlake Laboratory",
+  "location": "Hangzhou, China",
+  "email": "lifanguxjtu@outlook.com",
+  "github": "https://github.com/GuLifan",
+  "orcid": "https://orcid.org/0009-0000-4677-8713",
+  "avatar": "https://github.com/GuLifan.png?size=480",
+  "description": "Research Assistant at Westlake Laboratory studying neuron-microglia interactions during addiction and withdrawal.",
+  "goatCounterCode": "",
+  "research": [
+    {
+      "number": "01",
+      "title": "Neural Circuits",
+      "description": "Investigating neuron-microglia interactions across addiction and withdrawal, with an interest in how cellular communication reshapes circuit function."
+    },
+    {
+      "number": "02",
+      "title": "Medical Data Science",
+      "description": "Building reproducible analytical workflows that connect clinical questions with interpretable biomedical data."
+    },
+    {
+      "number": "03",
+      "title": "Continuous Glucose Monitoring",
+      "description": "Developing CGM metrics and research software for glycemic phenotyping, variability analysis, and clinically grounded decision support."
+    },
+    {
+      "number": "04",
+      "title": "Biomedical AI",
+      "description": "Applying machine learning to medical imaging, segmentation, region-of-interest extraction, and translational research tools."
+    }
+  ],
+  "publications": [
+    {
+      "year": "2026",
+      "status": "Published",
+      "authors": "Ruiqing Dong, Lifan Gu, et al.",
+      "title": "Transition from Continuous Subcutaneous Insulin Infusion to IDeg-Based Regimens in Hospitalized T2DM Patients: A Single-Center Retrospective Analysis",
+      "venue": "Diabetes, Metabolic Syndrome and Obesity, 19, 1-13",
+      "url": "https://doi.org/10.2147/DMSO.S557994"
+    },
+    {
+      "year": "2026",
+      "status": "Published",
+      "authors": "Ruiqing Dong, Hui Liu, Lifan Gu, et al.",
+      "title": "Transition from CSII to Second-Generation Basal Insulin Analogues in Hospitalized T2DM Patients: A CGM-Based Study",
+      "venue": "BMC Endocrine Disorders",
+      "url": "https://doi.org/10.1186/s12902-026-02291-1"
+    },
+    {
+      "year": "2025",
+      "status": "Published",
+      "authors": "Yuxin Sun, Chenxin Fu, Lifan Gu, et al.",
+      "title": "Sex-related differences and associated transcriptional signatures in the brain ventricular system and cerebrospinal fluid development in full-term neonates",
+      "venue": "Biology of Sex Differences, 16, 35",
+      "url": "https://doi.org/10.1186/s13293-025-00719-2"
+    }
+  ],
+  "abstracts": [
+    {
+      "year": "2026",
+      "status": "Submitted / under review",
+      "authors": "Wei Qiang, Ruiqing Dong, Hui Liu, Lifan Gu, et al.",
+      "title": "Beyond insulin resistance: TyG index, eGFR and albumin identify four distinct phenotypes of hospitalized type 2 diabetes",
+      "venue": "EASD 2026 Annual Meeting, Abstract A-26-1010-EASD"
+    },
+    {
+      "year": "2026",
+      "status": "Submitted / under review",
+      "authors": "Wei Qiang, Ruiqing Dong, Hui Liu, Lifan Gu, et al.",
+      "title": "Systemic Reserve, Not Muscle Mass, Predicts Nocturnal Glycemic Instability",
+      "venue": "EASD 2026 Annual Meeting, Abstract A-26-2202-EASD"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Multi-Pose Palmprint ROI Extraction",
+      "description": "A graduation research project on robust palmprint ROI extraction and alignment in complex backgrounds, combining RT-DETR-based detection with affine correction.",
+      "url": "https://github.com/GuLifan/Study-on-ROI-Extraction-and-Alignment-Algorithms-for-MultiPose-Palmprint-Images",
+      "tags": ["Computer Vision", "RT-DETR", "Python"]
+    },
+    {
+      "title": "CGM Analysis Components",
+      "description": "Research-oriented components for continuous glucose monitoring data processing, clinical analysis, and reproducible glycemic metrics.",
+      "url": "https://github.com/GuLifan/Analysis-Components-for-Continuous-Glucose-Monitoring",
+      "tags": ["CGM", "Clinical Data", "Python"]
+    },
+    {
+      "title": "CGM Metric Library v2.0",
+      "description": "A redesigned metric library for standardized CGM computation, including explicit data contracts and sparse-data analysis pathways.",
+      "url": "https://github.com/GuLifan/CGM-Metric-Library-v2.0",
+      "tags": ["Open Source", "Metrics", "Python"]
+    },
+    {
+      "title": "T2DM Remission Manager",
+      "description": "A clinical workflow navigator for type 2 diabetes remission management: the system computes and reminds while the physician decides.",
+      "url": "https://github.com/GuLifan/T2DM-Remission-Manager",
+      "tags": ["Clinical Workflow", "Decision Support", "T2DM"]
+    }
+  ],
+  "honors": [
+    {
+      "year": "2025",
+      "title": "Grand Prize, 36th Tengfei Cup Innovation and Entrepreneurship Competition",
+      "organization": "Xi'an Jiaotong University"
+    },
+    {
+      "year": "2025",
+      "title": "First-Class Science and Technology Innovation Scholarship",
+      "organization": "Xi'an Jiaotong University"
+    },
+    {
+      "year": "2024",
+      "title": "First Prize, National College Student New Liberal Arts Practice Innovation Competition",
+      "organization": "Provincial Final"
+    },
+    {
+      "year": "2024",
+      "title": "Second Prize, 9th National Biomedical Engineering Innovation Design Competition",
+      "organization": "National Competition"
+    },
+    {
+      "year": "2023",
+      "title": "First-Class Scholarship, Student Hongli Academic Forum",
+      "organization": "Xi'an Jiaotong University"
+    }
+  ],
+  "experience": [
+    {
+      "period": "Sep 2026 - Present",
+      "role": "Research Assistant",
+      "organization": "Westlake Laboratory",
+      "description": "Research on neuron-microglia interactions during addiction and withdrawal."
+    },
+    {
+      "period": "May 2026 - Aug 2026",
+      "role": "Research Trainee",
+      "organization": "Chinese Institute for Brain Research, Beijing",
+      "description": "Training in neural-circuit experiments and laboratory operations."
+    },
+    {
+      "period": "Oct 2024 - Apr 2026",
+      "role": "Clinical Data and Research Software Development",
+      "organization": "The First Affiliated Hospital of Xi'an Jiaotong University",
+      "description": "CGM data management, analysis, research software, and academic outputs for retrospective T2DM studies."
+    }
+  ],
+  "education": [
+    {
+      "period": "2021 - 2026",
+      "degree": "Bachelor of Medicine; Bachelor of Engineering (Minor)",
+      "organization": "School of Future Technology, Xi'an Jiaotong University",
+      "description": "Clinical Medicine and Medical Engineering."
+    }
+  ],
+  "tools": ["Python", "R", "Medical imaging", "Clinical data analysis", "Neural-circuit experiments", "Research software"]
+}

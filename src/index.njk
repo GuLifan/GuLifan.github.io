@@ -1,0 +1,244 @@
+---
+layout: layouts/base.njk
+title: Lifan Gu | Academic Profile
+permalink: /
+---
+<header class="site-header" data-header>
+  <div class="shell header-inner">
+    <a class="wordmark" href="#top" aria-label="Back to top">
+      <span class="wordmark-mark">LG</span>
+      <span class="wordmark-name">Lifan Gu</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Projects</a>
+      <a href="#honors">Honors</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+      <span aria-hidden="true" data-theme-icon>☼</span>
+    </button>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="hero shell" id="top" aria-labelledby="hero-title">
+    <div class="hero-copy">
+      <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Research Assistant · Westlake Laboratory</p>
+      <h1 id="hero-title">Lifan Gu <span lang="zh-CN">谷立帆</span></h1>
+      <p class="hero-lede">Studying neuron-microglia interactions during addiction and withdrawal, while building bridges across neural circuits, clinical data, and biomedical AI.</p>
+      <div class="hero-actions">
+        <a class="button button-primary" href="#research">Explore research <span aria-hidden="true">↓</span></a>
+        <a class="button button-secondary" href="mailto:{{ profile.email }}" data-goatcounter-click="contact-email-hero">Email me <span aria-hidden="true">↗</span></a>
+      </div>
+      <ul class="identity-list" aria-label="Profile details">
+        <li>{{ profile.location }}</li>
+        <li>ORCID 0009-0000-4677-8713</li>
+        <li>Sep 2026 - Present</li>
+      </ul>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait-halo" aria-hidden="true"></div>
+      <img class="portrait" src="{{ profile.avatar }}" alt="Portrait of {{ profile.name }}" width="480" height="480">
+      <p class="portrait-caption">Research at the interface of cells, circuits, and computation.</p>
+    </div>
+  </section>
+
+  <section class="section shell section-grid" id="about" aria-labelledby="about-title">
+    <div class="section-heading">
+      <p class="eyebrow">01 · About</p>
+      <h2 id="about-title">From clinical questions to research systems.</h2>
+    </div>
+    <div class="prose about-prose">
+      {% set aboutSource %}{% include "content/about.md" %}{% endset %}
+      {{ aboutSource | markdown | safe }}
+      <div class="profile-links" aria-label="External profiles">
+        <a href="{{ profile.github }}" target="_blank" rel="me noopener noreferrer" data-goatcounter-click="profile-github">GitHub <span aria-hidden="true">↗</span></a>
+        <a href="{{ profile.orcid }}" target="_blank" rel="me noopener noreferrer" data-goatcounter-click="profile-orcid">ORCID <span aria-hidden="true">↗</span></a>
+        <a href="mailto:{{ profile.email }}" data-goatcounter-click="contact-email-about">Email <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="research" aria-labelledby="research-title">
+    <div class="shell">
+      <div class="section-heading section-heading-wide">
+        <p class="eyebrow">02 · Research</p>
+        <h2 id="research-title">Four connected lines of inquiry.</h2>
+        <p>Experimental and computational approaches, grounded in biomedical questions.</p>
+      </div>
+      <div class="research-grid">
+        {% for item in profile.research %}
+        <article class="research-card">
+          <span class="card-number">{{ item.number }}</span>
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section shell" id="publications" aria-labelledby="publications-title">
+    <div class="section-heading section-heading-wide publication-intro">
+      <div>
+        <p class="eyebrow">03 · Publications</p>
+        <h2 id="publications-title">Selected scholarship.</h2>
+      </div>
+      <p>Published articles are linked to their authoritative record. Conference submissions are separated to keep status explicit.</p>
+    </div>
+
+    <div class="publication-group">
+      <h3 class="group-title">Journal articles</h3>
+      <ol class="publication-list">
+        {% for publication in profile.publications %}
+        <li class="publication-item">
+          <div class="publication-meta">
+            <span>{{ publication.year }}</span>
+            <span class="status status-published">{{ publication.status }}</span>
+          </div>
+          <div>
+            <p class="publication-authors">{{ publication.authors }}</p>
+            <h4><a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer" data-goatcounter-click="publication-{{ loop.index }}">{{ publication.title }} <span aria-hidden="true">↗</span></a></h4>
+            <p class="publication-venue">{{ publication.venue }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+    </div>
+
+    <div class="publication-group pending-group">
+      <h3 class="group-title">Conference abstracts</h3>
+      <ol class="publication-list">
+        {% for abstract in profile.abstracts %}
+        <li class="publication-item">
+          <div class="publication-meta">
+            <span>{{ abstract.year }}</span>
+            <span class="status status-pending">{{ abstract.status }}</span>
+          </div>
+          <div>
+            <p class="publication-authors">{{ abstract.authors }}</p>
+            <h4>{{ abstract.title }}</h4>
+            <p class="publication-venue">{{ abstract.venue }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ol>
+      <p class="status-note">Status retained from the latest available CV; no later authoritative public record was identified as of 4 October 2026.</p>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="projects" aria-labelledby="projects-title">
+    <div class="shell">
+      <div class="section-heading section-heading-wide">
+        <p class="eyebrow">04 · Software &amp; Projects</p>
+        <h2 id="projects-title">Research made inspectable.</h2>
+        <p>Selected public repositories spanning medical data, clinical workflows, and computer vision.</p>
+      </div>
+      <div class="project-grid">
+        {% for project in profile.projects %}
+        <article class="project-card">
+          <div class="project-card-top">
+            <span class="project-index">0{{ loop.index }}</span>
+            <a class="project-arrow" href="{{ project.url }}" target="_blank" rel="noopener noreferrer" aria-label="Open {{ project.title }} on GitHub" data-goatcounter-click="project-{{ loop.index }}">↗</a>
+          </div>
+          <h3><a href="{{ project.url }}" target="_blank" rel="noopener noreferrer" data-goatcounter-click="project-title-{{ loop.index }}">{{ project.title }}</a></h3>
+          <p>{{ project.description }}</p>
+          <ul class="tag-list" aria-label="Project topics">
+            {% for tag in project.tags %}<li>{{ tag }}</li>{% endfor %}
+          </ul>
+        </article>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="section shell section-grid" id="honors" aria-labelledby="honors-title">
+    <div class="section-heading">
+      <p class="eyebrow">05 · Selected Honors</p>
+      <h2 id="honors-title">A partial record of recognition.</h2>
+      <p>Selected awards only; this is not a complete list.</p>
+    </div>
+    <ol class="honors-list">
+      {% for honor in profile.honors %}
+      <li>
+        <span class="honor-year">{{ honor.year }}</span>
+        <div>
+          <h3>{{ honor.title }}</h3>
+          <p>{{ honor.organization }}</p>
+        </div>
+      </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <section class="section section-tint" id="cv" aria-labelledby="cv-title">
+    <div class="shell">
+      <div class="section-heading section-heading-wide cv-heading">
+        <div>
+          <p class="eyebrow">06 · CV</p>
+          <h2 id="cv-title">Experience &amp; education.</h2>
+        </div>
+        <p class="no-download">Web profile only · No downloadable CV</p>
+      </div>
+
+      <div class="cv-layout">
+        <div>
+          <h3 class="group-title">Experience</h3>
+          <ol class="timeline">
+            {% for item in profile.experience %}
+            <li>
+              <p class="timeline-period">{{ item.period }}</p>
+              <h4>{{ item.role }}</h4>
+              <p class="timeline-org">{{ item.organization }}</p>
+              <p>{{ item.description }}</p>
+            </li>
+            {% endfor %}
+          </ol>
+        </div>
+        <div>
+          <h3 class="group-title">Education</h3>
+          <ol class="timeline">
+            {% for item in profile.education %}
+            <li>
+              <p class="timeline-period">{{ item.period }}</p>
+              <h4>{{ item.degree }}</h4>
+              <p class="timeline-org">{{ item.organization }}</p>
+              <p>{{ item.description }}</p>
+            </li>
+            {% endfor %}
+          </ol>
+
+          <h3 class="group-title tools-title">Methods &amp; tools</h3>
+          <ul class="tool-list">
+            {% for tool in profile.tools %}<li>{{ tool }}</li>{% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contact" aria-labelledby="contact-title">
+    <div class="shell contact-inner">
+      <p class="eyebrow">07 · Contact</p>
+      <h2 id="contact-title">Interested in the same questions?</h2>
+      <p>I welcome thoughtful conversations about neural circuits, biomedical data, and reproducible research software.</p>
+      <a class="contact-email" href="mailto:{{ profile.email }}" data-goatcounter-click="contact-email-footer">{{ profile.email }} <span aria-hidden="true">↗</span></a>
+      <div class="contact-links">
+        <a href="{{ profile.github }}" target="_blank" rel="me noopener noreferrer" data-goatcounter-click="contact-github">GitHub</a>
+        <a href="{{ profile.orcid }}" target="_blank" rel="me noopener noreferrer" data-goatcounter-click="contact-orcid">ORCID</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="shell footer-inner">
+    <p>© <span data-current-year>2026</span> Lifan Gu.</p>
+    <p class="privacy-note">Privacy-conscious traffic statistics are collected with GoatCounter when analytics are enabled. No advertising trackers or contact forms are used.</p>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
