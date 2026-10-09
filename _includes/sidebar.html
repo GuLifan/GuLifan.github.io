@@ -1,0 +1,45 @@
+<aside class="profile-panel glass-panel" aria-label="Profile information" itemscope itemtype="https://schema.org/Person">
+  <div class="avatar-frame">
+    <img
+      class="profile-avatar"
+      src="{{ site.author.avatar }}"
+      alt="Portrait of {{ site.author.name }}"
+      width="480"
+      height="480"
+      itemprop="image"
+    >
+  </div>
+
+  <div class="profile-heading">
+    <p class="profile-kicker">Research profile</p>
+    <h1 itemprop="name">{{ site.author.name }} <span lang="zh-CN">{{ site.author.name_zh }}</span></h1>
+    <p class="profile-role" itemprop="jobTitle">{{ site.author.role }}</p>
+    <p class="profile-affiliation" itemprop="affiliation">{{ site.author.affiliation }}</p>
+  </div>
+
+  <p class="profile-bio">{{ site.author.bio }}</p>
+
+  <ul class="profile-meta" aria-label="Contact and profile links">
+    <li>
+      <span class="meta-icon" aria-hidden="true">⌖</span>
+      <span>{{ site.author.location }}</span>
+    </li>
+    <li>
+      <span class="meta-icon" aria-hidden="true">✉</span>
+      <a href="mailto:{{ site.author.email }}" data-goatcounter-click="sidebar-email">Email</a>
+    </li>
+    <li>
+      <span class="meta-icon" aria-hidden="true">⌘</span>
+      <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="me noopener noreferrer" data-goatcounter-click="sidebar-github">GitHub</a>
+    </li>
+    <li>
+      <span class="meta-icon" aria-hidden="true">◉</span>
+      <a href="{{ site.author.orcid }}" target="_blank" rel="me noopener noreferrer" data-goatcounter-click="sidebar-orcid">ORCID</a>
+    </li>
+  </ul>
+
+  <div class="availability">
+    <span aria-hidden="true"></span>
+    Sep 2026–Present
+  </div>
+</aside>

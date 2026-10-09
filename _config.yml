@@ -1,0 +1,61 @@
+title: "Lifan Gu | Academic Homepage"
+description: >-
+  Research Assistant at Westlake Laboratory studying neuron-microglia
+  interactions during addiction and withdrawal.
+url: "https://gulifan.github.io"
+baseurl: ""
+repository: "GuLifan/GuLifan.github.io"
+lang: "en"
+timezone: "Asia/Shanghai"
+
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+sass:
+  style: compressed
+
+include:
+  - _pages
+
+exclude:
+  - LOCAL_MAINTENANCE_GUIDE.md
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - Rakefile
+  - scripts
+  - vendor
+  - _SPEC
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: default
+      author_profile: true
+
+goatcounter_code: "gulifan"
+
+# 预留未来接入点。本次发布明确关闭 Google Scholar 自动抓取与引用数显示。
+google_scholar:
+  enabled: false
+  profile_url: ""
+
+author:
+  name: "Lifan Gu"
+  name_zh: "谷立帆"
+  avatar: "https://github.com/GuLifan.png?size=480"
+  role: "Research Assistant"
+  affiliation: "Westlake Laboratory"
+  location: "Hangzhou, China"
+  email: "lifanguxjtu@outlook.com"
+  github: "GuLifan"
+  orcid: "https://orcid.org/0009-0000-4677-8713"
+  bio: >-
+    Studying neuron-microglia interactions during addiction and withdrawal.

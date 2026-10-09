@@ -1,4 +1,4 @@
-name: Deploy personal site to GitHub Pages
+name: Deploy Jekyll academic site to GitHub Pages
 
 on:
   push:
@@ -21,17 +21,16 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v6
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
         with:
-          node-version: 22
-          cache: npm
-
-      - name: Install locked dependencies
-        run: npm ci
+          ruby-version: "3.3"
+          bundler-cache: true
 
       - name: Build and validate site
-        run: npm test
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec rake test
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5

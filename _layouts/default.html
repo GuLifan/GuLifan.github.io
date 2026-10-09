@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'en' }}" data-theme="dark" class="no-js">
+  <head>
+    {% include head.html %}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+
+    {% include masthead.html %}
+
+    <main id="main-content" class="site-shell">
+      {% if page.author_profile %}{% include sidebar.html %}{% endif %}
+      <article class="content-column" itemscope itemtype="https://schema.org/ProfilePage">
+        {{ content }}
+      </article>
+    </main>
+
+    {% include footer.html %}
+    {% include scripts.html %}
+  </body>
+</html>

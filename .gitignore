@@ -1,6 +1,12 @@
-node_modules/
 _site/
-.npm-cache/
+node_modules/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+.bundle/
+vendor/bundle/
+.tools/
+.ruby-lsp/
 .DS_Store
 Thumbs.db
-npm-debug.log*
+*.gem

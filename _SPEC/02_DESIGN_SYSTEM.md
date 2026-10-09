@@ -2,8 +2,10 @@
 
 ## Direction
 
-A restrained academic editorial style: dark by default, high-contrast text,
-generous spacing, subtle borders, and limited motion.
+A restrained academic interface based on AcadHomepage: a persistent author
+profile, compact anchor navigation, and a readable single-column scholarly
+record. The visual layer is dark, high-contrast, and technology-oriented, with
+macOS-inspired translucent glass surfaces.
 
 ## Color tokens
 
@@ -15,6 +17,11 @@ Dark theme:
 - Muted text: `#a7bdc2`
 - Accent: `#63e6cf`
 - Secondary accent: `#78c7ff`
+- Glass fill: `rgba(13, 27, 34, 0.68)`
+- Glass border: `rgba(175, 235, 228, 0.14)`
+
+Glass surfaces use `backdrop-filter` when supported and an opaque fallback
+when not supported. Text contrast must not depend on backdrop blur.
 
 Light theme must preserve the same hierarchy and meet contrast requirements.
 
@@ -23,6 +30,7 @@ Light theme must preserve the same hierarchy and meet contrast requirements.
 - Use a system font stack; do not load remote font services.
 - Use compact uppercase eyebrow labels and large editorial headings.
 - Maintain a readable body width and line height.
+- Use the system font stack only; no remote font service.
 
 ## Interaction
 
@@ -30,6 +38,8 @@ Light theme must preserve the same hierarchy and meet contrast requirements.
 - Honor `prefers-reduced-motion`.
 - Theme choice persists locally in the browser.
 - Navigation remains usable at 360 px without hiding core destinations.
+- Motion is limited to subtle elevation, glow, and section-entry effects.
+- Do not add decorative macOS red/yellow/green window controls.
 
 ## Accessibility target
 

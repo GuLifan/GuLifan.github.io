@@ -27,6 +27,18 @@
   no authoritative public record confirming a later status was found on
   4 October 2026.
 
+## Section model
+
+- The public navigation is limited to About Me, Educations, Experiences,
+  Publications, Projects, and Honors and Awards.
+- The four research directions are summarized inside About Me rather than
+  exposed as a separate navigation section.
+- Publications must keep journal articles and conference abstracts visibly
+  separated.
+- Projects contain only the four repositories pinned on the owner's GitHub
+  profile at migration time.
+- Honors remain explicitly selective and do not imply a complete record.
+
 ## Analytics
 
 - GoatCounter is the only analytics provider approved for the first release.
@@ -35,3 +47,10 @@
 - Do not add advertising, fingerprinting, contact forms, or data enrichment.
 - The site must build and operate normally when the GoatCounter code is blank.
 - A concise analytics disclosure must remain visible in the footer.
+
+## Deferred integrations
+
+- Google Scholar automation is disabled for this release.
+- No Scholar profile link, crawler workflow, citation counter, or citation
+  badge may be published until the owner supplies a verified profile and
+  approves activation.

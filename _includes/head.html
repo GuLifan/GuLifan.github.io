@@ -1,0 +1,52 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ page.description | default: site.description | escape }}">
+<meta name="author" content="{{ site.author.name | escape }}">
+<meta name="theme-color" content="#071116">
+<meta name="color-scheme" content="dark light">
+
+<title>{{ page.title | default: site.title | escape }}</title>
+<link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+<link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<meta property="og:type" content="profile">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="{{ site.title | escape }}">
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.description | escape }}">
+<meta property="og:url" content="{{ page.url | replace: 'index.html', '' | absolute_url }}">
+<meta property="og:image" content="{{ site.author.avatar }}">
+<meta name="twitter:card" content="summary">
+
+<script>
+  // 在首次绘制前恢复主题，避免页面先亮后暗。
+  document.documentElement.classList.remove("no-js");
+  try {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "light" || savedTheme === "dark") {
+      document.documentElement.dataset.theme = savedTheme;
+    }
+  } catch (_) {}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": {{ site.author.name | jsonify }},
+  "alternateName": {{ site.author.name_zh | jsonify }},
+  "url": {{ site.url | jsonify }},
+  "image": {{ site.author.avatar | jsonify }},
+  "jobTitle": {{ site.author.role | jsonify }},
+  "affiliation": {
+    "@type": "Organization",
+    "name": {{ site.author.affiliation | jsonify }}
+  },
+  "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
+  "sameAs": [
+    {{ site.author.github | prepend: "https://github.com/" | jsonify }},
+    {{ site.author.orcid | jsonify }}
+  ]
+}
+</script>

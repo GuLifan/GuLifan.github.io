@@ -1,87 +1,76 @@
-# Lifan Gu - Academic Personal Website
+# Lifan Gu — Academic Homepage
 
-Source code for `https://gulifan.github.io/`. The site is generated with
-Eleventy and deployed to GitHub Pages through GitHub Actions.
+Source for [https://gulifan.github.io/](https://gulifan.github.io/), an
+English-first academic profile built with Jekyll and deployed through GitHub
+Pages.
+
+## Information architecture
+
+The homepage follows this single-page structure:
+
+1. About Me
+2. Educations
+3. Experiences
+4. Publications
+5. Projects
+6. Honors and Awards
+
+Profile facts and structured entries are maintained in `_config.yml` and
+`_data/profile.yml`. Page copy and section markup live in `_pages/about.md`.
 
 ## Local development
 
-Requirements: Node.js 20 or later.
+Requirements:
+
+- Ruby 3.3 or later
+- Bundler
+
+Install the locked dependencies:
 
 ```powershell
-npm install
-npm run serve
+bundle config set --local path vendor/bundle
+bundle install
 ```
 
-Open `http://localhost:8080/`.
-
-Production verification:
+Start the local server:
 
 ```powershell
-npm test
+bundle exec jekyll serve --livereload
 ```
 
-## Edit the self-introduction
+Open `http://127.0.0.1:4000/`.
 
-Edit:
+Run the production build and validation suite:
 
-```text
-src/_includes/content/about.md
+```powershell
+bundle exec rake test
 ```
-
-Write ordinary Markdown paragraphs. Commit and push the change; GitHub Actions
-will rebuild and publish the site automatically.
-
-Most structured facts, publications, projects, honors, and links are kept in:
-
-```text
-src/_data/profile.json
-```
-
-## Configure GoatCounter
-
-After registering a GoatCounter site, its dashboard address will look like:
-
-```text
-https://YOUR-CODE.goatcounter.com
-```
-
-Only copy `YOUR-CODE` - not the full URL.
-
-1. Open `src/_data/profile.json`.
-2. Find this line:
-
-   ```json
-   "goatCounterCode": ""
-   ```
-
-3. Replace it with your site code. Example:
-
-   ```json
-   "goatCounterCode": "gulifan"
-   ```
-
-4. Run `npm test` and push the change.
-5. Open the published site once with any ad blocker disabled. GoatCounter notes
-   that a page view normally appears in its dashboard within about 10 seconds.
-
-When the value is blank, the build omits GoatCounter completely. Important
-email, GitHub, ORCID, publication, and project links already contain approved
-event labels and will start reporting after the code is enabled.
-
-To avoid counting your own visits, use GoatCounter's documented ignore options
-or keep its domain blocked in your everyday browser after the initial test.
-
-## Content and privacy rules
-
-Review `_SPEC/` before changing scope. In particular:
-
-- Never add the source CV or a CV download.
-- Never add PI names without a new explicit approval.
-- Keep pending conference abstracts visibly separated from publications.
-- Do not add another analytics or advertising provider without approval.
 
 ## Deployment
 
-The workflow at `.github/workflows/deploy.yml` builds, validates, uploads, and
-deploys `_site/`. In the repository settings, GitHub Pages must use **GitHub
-Actions** as its source.
+The workflow in `.github/workflows/deploy.yml` builds, validates, uploads, and
+deploys `_site/`. GitHub Pages must use **GitHub Actions** as its only source.
+
+## Analytics and deferred integrations
+
+GoatCounter is enabled with the approved `gulifan` site code. Google Analytics
+is not used. Google Scholar crawling and citation counters are intentionally
+disabled until a verified Scholar profile is supplied and activation is
+approved.
+
+## Content and privacy
+
+Review `_SPEC/` before changing scope. In particular:
+
+- Never add the source CV or a downloadable CV.
+- Never add a PI or supervisor name without explicit approval.
+- Keep pending conference abstracts separate from published journal articles.
+- Do not add advertising or another analytics provider without approval.
+
+## Template provenance
+
+The information architecture and profile-sidebar pattern are adapted from
+[AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io), audited at
+commit `2cc1577eeaf2f74dede6d016a70722dbd409ea2f`. The original project is
+available under the MIT License. Its example content, legacy dependency lock,
+Google Analytics integration, and Google Scholar crawler are not included.

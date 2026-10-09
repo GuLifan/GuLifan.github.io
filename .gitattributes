@@ -1,0 +1,11 @@
+* text=auto
+*.html text eol=lf
+*.js text eol=lf
+*.md text eol=lf
+*.rb text eol=lf
+*.scss text eol=lf
+*.txt text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+Gemfile text eol=lf
+Rakefile text eol=lf

@@ -1,0 +1,25 @@
+<header class="masthead" data-header>
+  <div class="masthead-inner">
+    <a class="wordmark" href="{{ '/#about-me' | relative_url }}" aria-label="Lifan Gu homepage">
+      <span class="wordmark-mark" aria-hidden="true">LG</span>
+      <span>Lifan Gu</span>
+    </a>
+
+    <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-navigation">
+      <span class="sr-only">Toggle navigation</span>
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+
+    <nav id="site-navigation" class="site-navigation" aria-label="Primary navigation" data-navigation>
+      <ul>
+        {% for link in site.data.navigation.main %}
+          <li><a href="{{ link.url | relative_url }}">{{ link.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+
+    <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch to light theme" title="Switch theme">
+      <span data-theme-icon aria-hidden="true">☼</span>
+    </button>
+  </div>
+</header>
