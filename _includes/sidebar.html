@@ -1,8 +1,12 @@
+{% capture resolved_avatar %}{% include avatar-url.html %}{% endcapture %}
+{% assign resolved_avatar = resolved_avatar | strip %}
 <aside class="profile-panel glass-panel" aria-label="Profile information" itemscope itemtype="https://schema.org/Person">
   <div class="avatar-frame">
     <img
       class="profile-avatar"
-      src="{{ site.author.avatar }}"
+      src="{{ resolved_avatar | relative_url }}"
+      data-avatar-fallback="{{ site.author.avatar_fallback }}"
+      onerror="this.onerror=null;this.src=this.dataset.avatarFallback"
       alt="Portrait of {{ site.author.name }}"
       width="480"
       height="480"

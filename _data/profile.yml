@@ -18,14 +18,14 @@ research:
 
 educations:
   - period: "2021–2026"
-    degree: "Bachelor of Medicine; Bachelor of Engineering (Minor)"
+    degree: "Bachelor of Medicine and Bachelor of Engineering"
     institution: "School of Future Technology, Xi'an Jiaotong University"
-    description: "Clinical Medicine and Medical Engineering."
+    description: "Clinical Medicine; Medical Engineering."
 
 experiences:
   - period: "Sep 2026–Present"
     role: "Research Assistant"
-    organization: "Westlake Laboratory"
+    organization: "Westlake Laboratory, Westlake Institute for Advanced Study (WIAS)"
     description: >-
       Research on neuron-microglia interactions during addiction and
       withdrawal.
@@ -95,7 +95,7 @@ projects:
     tags:
       - "Computer Vision"
       - "RT-DETR"
-      - "Python"
+      - "Object Detection"
   - title: "CGM Analysis Components"
     description: >-
       Research-oriented components for continuous glucose monitoring data
@@ -105,23 +105,21 @@ projects:
     tags:
       - "CGM"
       - "Clinical Data"
-      - "Python"
   - title: "CGM Metric Library v2.0"
     description: >-
       A redesigned metric library for standardized CGM computation, including
       explicit data contracts and sparse-data analysis pathways.
     url: "https://github.com/GuLifan/CGM-Metric-Library-v2.0"
     tags:
-      - "Open Source"
+      - "CGM"
       - "Metrics"
-      - "Python"
   - title: "T2DM Remission Manager"
     description: >-
       A clinical workflow navigator for type 2 diabetes remission management:
       the system computes and reminds while the physician decides.
     url: "https://github.com/GuLifan/T2DM-Remission-Manager"
     tags:
-      - "Clinical Workflow"
+      - "Workflow"
       - "Decision Support"
       - "T2DM"
 

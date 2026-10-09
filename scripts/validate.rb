@@ -28,6 +28,11 @@ assertions = [
   [html.include?("0009-0000-4677-8713"), "ORCID is present"],
   [html.include?("application/ld+json"), "Person structured data exists"],
   [html.include?('rel="canonical"'), "Canonical URL exists"],
+  [html.include?('/assets/images/avatar.jpg'), "Local avatar is preferred"],
+  [html.include?('data-avatar-fallback="https://github.com/GuLifan.png?size=480"'),
+   "GitHub avatar fallback is configured"],
+  [html.include?('onerror="this.onerror=null;this.src=this.dataset.avatarFallback"'),
+   "Runtime avatar fallback is enabled"],
   [html.include?('data-goatcounter="https://gulifan.goatcounter.com/count"'), "GoatCounter endpoint is correct"],
   [!html.downcase.include?("googletagmanager"), "Google Analytics is absent"],
   [!html.downcase.include?("google scholar"), "Google Scholar UI is disabled"],
@@ -47,7 +52,14 @@ assertions.each do |passed, label|
   puts "✓ #{label}"
 end
 
-required_files = %w[404.html robots.txt sitemap.xml assets/css/main.css assets/js/main.js]
+required_files = %w[
+  404.html
+  robots.txt
+  sitemap.xml
+  assets/css/main.css
+  assets/js/main.js
+  assets/images/avatar.jpg
+]
 required_files.each do |relative_path|
   abort("Validation failed: missing #{relative_path}") unless output.join(relative_path).file?
 

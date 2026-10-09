@@ -17,7 +17,9 @@
 - Do not publish a PI or supervisor name.
 - Do not publish the CV sections on personal qualities, organizational roles,
   or IELTS score.
-- Use the current GitHub avatar, not the portrait embedded in the CV.
+- Prefer the owner-supplied avatar at `/assets/images/avatar.jpg`; when that
+  file is absent or fails to load, fall back automatically to the current
+  GitHub avatar. Do not use the portrait embedded in the CV.
 
 ## Publication status
 

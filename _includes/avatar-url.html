@@ -1,0 +1,12 @@
+{%- comment -%}
+  头像地址解析规则：优先使用仓库内固定路径的自定义头像；如果构建时没有
+  找到该静态文件，则退回到 GitHub 头像。输出保持为原始 URL，调用方可按
+  使用场景继续套用 relative_url 或 absolute_url 过滤器。
+{%- endcomment -%}
+{%- assign configured_avatar = site.author.avatar | default: "/assets/images/avatar.jpg" -%}
+{%- assign local_avatar = site.static_files | where: "path", configured_avatar | first -%}
+{%- if local_avatar -%}
+  {{- configured_avatar -}}
+{%- else -%}
+  {{- site.author.avatar_fallback -}}
+{%- endif -%}

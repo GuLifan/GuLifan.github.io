@@ -11,11 +11,11 @@ redirect_from:
 
 <section class="content-section glass-panel intro-section" id="about-me" aria-labelledby="about-me-title">
   <p class="section-index">01 · About Me</p>
-  <h2 id="about-me-title">From clinical questions to research systems.</h2>
+  <h2 id="about-me-title">Intersection of medicine and engineering.</h2>
   <p class="intro-lede">
-    I am a Research Assistant at Westlake Laboratory, where I study
-    neuron-microglia interactions during addiction and withdrawal. I completed
-    my undergraduate training in Clinical Medicine and Medical Engineering at
+    I am a research assistant at Westlake Laboratory, where I study
+    neuron-microglia interactions during addiction and withdrawal. I earned
+    bachelor's degrees in Clinical Medicine and Medical Engineering at
     Xi'an Jiaotong University.
   </p>
   <p>
@@ -38,7 +38,7 @@ redirect_from:
 
 <section class="content-section glass-panel" id="educations" aria-labelledby="educations-title">
   <p class="section-index">02 · Educations</p>
-  <h2 id="educations-title">Academic training.</h2>
+  <h2 id="educations-title">Bachelor Degree</h2>
   <ol class="timeline-list">
     {% for item in site.data.profile.educations %}
       <li>
@@ -72,10 +72,9 @@ redirect_from:
 
 <section class="content-section glass-panel" id="publications" aria-labelledby="publications-title">
   <p class="section-index">04 · Publications</p>
-  <h2 id="publications-title">Selected scholarship.</h2>
+  <h2 id="publications-title">Published articles.</h2>
   <p class="section-intro">
-    Journal articles link to their authoritative DOI records. Conference
-    submissions are listed separately so their status remains explicit.
+    Journal papers, conference papers and patents.
   </p>
 
   <h3 class="subsection-title">Journal articles</h3>
@@ -116,16 +115,15 @@ redirect_from:
     {% endfor %}
   </ol>
   <p class="status-note">
-    Status retained from the latest available CV; no later authoritative
-    public record was identified as of 4 October 2026.
+    The above data is up to September 2026.
   </p>
 </section>
 
 <section class="content-section glass-panel" id="projects" aria-labelledby="projects-title">
   <p class="section-index">05 · Projects</p>
-  <h2 id="projects-title">Pinned work on GitHub.</h2>
+  <h2 id="projects-title">Focused projects.</h2>
   <p class="section-intro">
-    Four selected public repositories spanning biomedical data, clinical
+    Selected public repositories spanning biomedical data, clinical
     workflows, and computer vision.
   </p>
 

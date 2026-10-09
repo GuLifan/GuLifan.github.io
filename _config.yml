@@ -1,6 +1,6 @@
 title: "Lifan Gu | Academic Homepage"
 description: >-
-  Research Assistant at Westlake Laboratory studying neuron-microglia
+  Research Assistant at Westlake University studying neuron-microglia
   interactions during addiction and withdrawal.
 url: "https://gulifan.github.io"
 baseurl: ""
@@ -50,10 +50,11 @@ google_scholar:
 author:
   name: "Lifan Gu"
   name_zh: "谷立帆"
-  avatar: "https://github.com/GuLifan.png?size=480"
+  avatar: "/assets/images/avatar.jpg"
+  avatar_fallback: "https://github.com/GuLifan.png?size=480"
   role: "Research Assistant"
-  affiliation: "Westlake Laboratory"
-  location: "Hangzhou, China"
+  affiliation: "Westlake Laboratory, Westlake Institute for Advanced Study (WIAS)"
+  location: "Hangzhou / Xi'an"
   email: "lifanguxjtu@outlook.com"
   github: "GuLifan"
   orcid: "https://orcid.org/0009-0000-4677-8713"
