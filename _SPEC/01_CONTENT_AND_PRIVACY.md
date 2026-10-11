@@ -7,7 +7,10 @@
 - Current role start: September 2026.
 - Current research: neuron-microglia interactions during addiction and
   withdrawal.
-- Education: Xi'an Jiaotong University, 2021-2026.
+- Education: two bachelor's degrees from Xi'an Jiaotong University,
+  2021-2026: Bachelor of Medicine in Clinical Medicine and Bachelor of
+  Engineering in Medical Engineering. Both degrees share the same institution
+  and period and must be rendered on separate lines within one education entry.
 - Public email: `lifanguxjtu@outlook.com`.
 - Public profiles: GitHub and ORCID.
 

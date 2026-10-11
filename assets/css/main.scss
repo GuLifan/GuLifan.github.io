@@ -604,6 +604,17 @@ img {
   font-size: 1.08rem;
 }
 
+// 双学位共享同一所学院与就读时间；每个学位独占一行，并保留紧凑层次。
+.degree-list {
+  display: grid;
+  gap: 0.35rem;
+  margin-bottom: 0.45rem;
+}
+
+.degree-list h3 {
+  margin: 0;
+}
+
 .timeline-list p {
   margin: 0.2rem 0 0;
 }

@@ -18,9 +18,10 @@ research:
 
 educations:
   - period: "2021–2026"
-    degree: "Bachelor of Medicine and Bachelor of Engineering"
+    degrees:
+      - "Bachelor of Medicine in Clinical Medicine"
+      - "Bachelor of Engineering in Medical Engineering"
     institution: "School of Future Technology, Xi'an Jiaotong University"
-    description: "Clinical Medicine; Medical Engineering."
 
 experiences:
   - period: "Sep 2026–Present"

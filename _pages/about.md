@@ -38,15 +38,18 @@ redirect_from:
 
 <section class="content-section glass-panel" id="educations" aria-labelledby="educations-title">
   <p class="section-index">02 · Educations</p>
-  <h2 id="educations-title">Bachelor Degree</h2>
+  <h2 id="educations-title">Bachelor Degrees</h2>
   <ol class="timeline-list">
     {% for item in site.data.profile.educations %}
       <li>
         <p class="timeline-period">{{ item.period }}</p>
         <div>
-          <h3>{{ item.degree }}</h3>
+          <div class="degree-list">
+            {% for degree in item.degrees %}
+              <h3>{{ degree }}</h3>
+            {% endfor %}
+          </div>
           <p class="item-organization">{{ item.institution }}</p>
-          <p>{{ item.description }}</p>
         </div>
       </li>
     {% endfor %}
