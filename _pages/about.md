@@ -70,52 +70,108 @@ redirect_from:
   </ol>
 </section>
 
-<section class="content-section glass-panel" id="publications" aria-labelledby="publications-title">
+<section
+  class="content-section glass-panel"
+  id="publications"
+  aria-labelledby="publications-title"
+>
   <p class="section-index">04 · Publications</p>
-  <h2 id="publications-title">Published articles.</h2>
+
+  <h2 id="publications-title">Research outputs.</h2>
+
   <p class="section-intro">
-    Journal papers, conference papers and patents.
+    Published articles, manuscripts under review, conference abstracts and
+    patents.
   </p>
 
-  <h3 class="subsection-title">Journal articles</h3>
+  <h3 class="subsection-title">
+    Journal articles and manuscripts
+  </h3>
+
   <ol class="publication-list">
     {% for publication in site.data.profile.publications %}
+      {% assign publication_status_class = "status-published" %}
+
+      {% if publication.status == "Under review" %}
+        {% assign publication_status_class = "status-pending" %}
+      {% endif %}
+
       <li class="publication-card">
         <div class="publication-meta">
           <span>{{ publication.year }}</span>
-          <span class="status status-published">{{ publication.status }}</span>
+
+          <span class="status {{ publication_status_class }}">
+            {{ publication.status }}
+          </span>
         </div>
+
         <div>
           <p class="authors">{{ publication.authors }}</p>
+
           <h4>
-            <a href="{{ publication.url }}" target="_blank" rel="noopener noreferrer" data-goatcounter-click="publication-{{ forloop.index }}">
-              {{ publication.title }} <span aria-hidden="true">↗</span>
-            </a>
+            {% if publication.url %}
+              <a
+                href="{{ publication.url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-goatcounter-click="publication-{{ forloop.index }}"
+              >
+                {{ publication.title }}
+                <span aria-hidden="true">↗</span>
+              </a>
+            {% else %}
+              {{ publication.title }}
+            {% endif %}
           </h4>
+
           <p class="venue">{{ publication.venue }}</p>
         </div>
       </li>
     {% endfor %}
   </ol>
 
-  <h3 class="subsection-title abstracts-title">Conference abstracts</h3>
+  <h3 class="subsection-title abstracts-title">
+    Conference abstracts
+  </h3>
+
   <ol class="publication-list">
     {% for abstract in site.data.profile.abstracts %}
       <li class="publication-card">
         <div class="publication-meta">
           <span>{{ abstract.year }}</span>
-          <span class="status status-pending">{{ abstract.status }}</span>
+
+          <span class="status status-published">
+            {{ abstract.status }}
+          </span>
         </div>
+
         <div>
           <p class="authors">{{ abstract.authors }}</p>
-          <h4>{{ abstract.title }}</h4>
+
+          <h4>
+            {% if abstract.url %}
+              <a
+                href="{{ abstract.url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-goatcounter-click="abstract-{{ forloop.index }}"
+              >
+                {{ abstract.title }}
+                <span aria-hidden="true">↗</span>
+              </a>
+            {% else %}
+              {{ abstract.title }}
+            {% endif %}
+          </h4>
+
           <p class="venue">{{ abstract.venue }}</p>
         </div>
       </li>
     {% endfor %}
   </ol>
+
   <p class="status-note">
-    The above data is up to September 2026.
+    The above data is current as of October 2026.
   </p>
 </section>
 

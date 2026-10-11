@@ -25,9 +25,11 @@
 
 - Three journal articles are labelled Published and linked to their DOI or
   official publication page.
-- Two EASD 2026 abstracts remain labelled `Submitted / under review` because
-  no authoritative public record confirming a later status was found on
-  4 October 2026.
+- One manuscript is labelled `Under review` and is not linked until an
+  authoritative public record is available.
+- One EASD 2026 abstract is labelled `Published / Short Oral presentation`
+  and linked to its official congress presentation page.
+- Publication information is current as of October 2026.
 
 ## Section model
 

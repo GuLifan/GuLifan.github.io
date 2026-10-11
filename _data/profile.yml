@@ -43,6 +43,16 @@ experiences:
 
 publications:
   - year: "2026"
+    status: "Under review"
+    authors: "Wei Qiang, Ruiqing Dong, Lifan Gu, et al."
+    title: >-
+      Baseline Serum Albumin Is Associated With CGM-Defined Nocturnal
+      Glycemic Variability During Inpatient Insulin Pump Therapy in Type 2
+      Diabetes
+    venue: >-
+      Diabetes & Metabolism Journal — Manuscript DMJ-2026-1178
+
+  - year: "2026"
     status: "Published"
     authors: "Ruiqing Dong, Lifan Gu, et al."
     title: >-
@@ -51,6 +61,7 @@ publications:
       Analysis
     venue: "Diabetes, Metabolic Syndrome and Obesity, 19, 1–13"
     url: "https://doi.org/10.2147/DMSO.S557994"
+
   - year: "2026"
     status: "Published"
     authors: "Ruiqing Dong, Hui Liu, Lifan Gu, et al."
@@ -59,6 +70,7 @@ publications:
       Hospitalized T2DM Patients: A CGM-Based Study
     venue: "BMC Endocrine Disorders"
     url: "https://doi.org/10.1186/s12902-026-02291-1"
+
   - year: "2025"
     status: "Published"
     authors: "Yuxin Sun, Chenxin Fu, Lifan Gu, et al."
@@ -71,19 +83,15 @@ publications:
 
 abstracts:
   - year: "2026"
-    status: "Submitted / under review"
+    status: "Published / Short Oral presentation"
     authors: "Wei Qiang, Ruiqing Dong, Hui Liu, Lifan Gu, et al."
     title: >-
       Beyond insulin resistance: TyG index, eGFR and albumin identify four
       distinct phenotypes of hospitalized type 2 diabetes
-    venue: "EASD 2026 Annual Meeting, Abstract A-26-1010-EASD"
-  - year: "2026"
-    status: "Submitted / under review"
-    authors: "Wei Qiang, Ruiqing Dong, Hui Liu, Lifan Gu, et al."
-    title: >-
-      Systemic Reserve, Not Muscle Mass, Predicts Nocturnal Glycemic
-      Instability
-    venue: "EASD 2026 Annual Meeting, Abstract A-26-2202-EASD"
+    venue: >-
+      62nd EASD Annual Meeting, Milan, Italy — Abstract 578,
+      Short Oral SO 041
+    url: "https://virtualcongress.easd.org/pag/presentation/269472"
 
 projects:
   - title: "Multi-Pose Palmprint ROI Extraction"
